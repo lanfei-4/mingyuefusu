@@ -17,6 +17,12 @@
     .layui-table, .layui-table-view{
     	margin-top: 0px;
     }
+    .layui-btn {
+    	background-color: pink;
+    }
+    .layui-laypage-em {
+    	background-color: pink!important;
+    }
   </style>
 </head>
 <body>
@@ -51,24 +57,6 @@
 	%>
 	<!-- 搜索框 -->
 	<script  type="text/html" id="search">
-		<div class="demoTable">
-		条件搜索：
-		 <div class="layui-inline">
-	  	  <select id="condition" name="condition" lay-verify="required">
-        	<option value=""></option>
-        	<option value="id">ID</option>
-        	<option value="name">书名</option>
-			<option value="author">作者</option>
-        	<option value="library_id">图书馆</option>
-        	<option value="position">位置</option>
-        	<option value="status">状态</option>
-			<option value="description">描述</option>
-		  </select>
-	 	 </div>
-	 	 <div class="layui-inline">
-	  	  <input class="layui-input" name="conditionValue" id="conditionValue" autocomplete="off" placeholder="请输入搜索内容">
-	 	 </div>
-	 	 <button class="layui-btn" data-type="reload" lay-event="search">搜索</button>
 		 <button type="button" class="layui-btn  layui-btn-sm"  lay-event="add"><i class="layui-icon">添加书籍</i></button>
 	</div>
 	</script>
@@ -80,7 +68,6 @@
     
 	<!-- 行操作  -->
 	<script type="text/html" id="operateBar">
-		<a class="layui-btn layui-btn-xs layui-btn-normal" lay-event="bookBorrowList">查看借阅</a>
   		<a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
   		<a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
 	</script>
@@ -128,7 +115,7 @@
 		      ,{field: 'position', title: '位置', width: 110, sort: true}
 		      ,{field: 'status', title: '状态', width: 60, templet:'#statusTpl'}
 		      ,{field: 'description', title: '描述', width: 340}
-		      ,{fixed: 'right', title:'操作', width: 200, align:'center', toolbar: '#operateBar'} //这里的toolbar值是模板元素的选择器
+		      ,{fixed: 'right', title:'操作', width: 150, align:'center', toolbar: '#operateBar'} //这里的toolbar值是模板元素的选择器
 		    ]]
 		  });
 		  

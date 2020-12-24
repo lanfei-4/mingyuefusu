@@ -9,11 +9,8 @@ body{
 	max-width: 500px;
 	margin: 0 auto;
 	padding:25px 45px 45px 45px;
-	box-shadow: 8px 8px #b3e5fc;
 	border-radius: 15px;
-	background-image: -webkit-linear-gradient(top left, #ffd6e7, #cdfcf9);
-	background-image: -o-linear-gradient(top left, #ffd6e7, #cdfcf9);
-	background-image: linear-gradient(to bottom right, #ffd6e7, #cdfcf9);
+	background-color: white;
 	font-size: 16px;
 }
 #login h1{
@@ -24,7 +21,6 @@ body{
 #login .my_input{
 	margin-top: 25px;
 	border: none;
-  background-color: rgba(0,0,0,0);
   box-shadow: none;
   border-bottom: 2px solid white;
   border-radius: 0px;

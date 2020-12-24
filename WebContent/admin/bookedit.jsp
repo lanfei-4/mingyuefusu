@@ -16,6 +16,12 @@
     .layui-form{
       margin: 10px 20px;
     }
+    .layui-form-radio>i:hover, .layui-form-radioed>i {
+    	color: pink;
+    }
+    .layui-btn {
+    	background-color: pink;
+    } 
   </style>
 </head>
 <body>

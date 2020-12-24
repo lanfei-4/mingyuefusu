@@ -8,7 +8,7 @@
 </head>
 <body>
 	<%
-		response.sendRedirect("./reader/04readerFrame.jsp");
+		response.sendRedirect("./adminLogin.html");
 	%>
 </body>
 </html>
