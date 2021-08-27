@@ -4,9 +4,9 @@
 
 使用jsp、layui、mysql完成的图书馆系统，包含用户图书借阅、图书管理员、系统管理员界面，功能齐全。
 
-开发工具为eclipse，环境java8，tomcat9.0+，mysql为5.7（mysql8也行）
+开发工具为eclipse，环境java8，**tomcat9.0+**，mysql为5.7（mysql8也行）
 
-**演示地址**：http://library.mingyuefusu.cn/library_manager_system
+**演示地址**：http://library.mingyuefusu.cn
 
 `（谢谢手下留情）`
 
@@ -91,9 +91,11 @@
 
 # 二、部署
 
-将**library.sql文件导入mysql数据库**，并需要修改以下两个数据库连接相关属性（数据库账号密码、数据库表名）
+下载压缩包，或者使用`git clone`下载（使用`git checkout maven`可以更换为分支maven，其使用maven进行依赖管理，更便于运行部署）
 
-![](https://ming-edu.oss-cn-beijing.aliyuncs.com/image-20201117122227215.png)
+将**library.sql文件导入mysql数据库**，并修改以下文件的数据库连接相关属性（数据库账号密码、数据库表名）
+
+![](https://ming-edu.oss-cn-beijing.aliyuncs.com/1630034271536.png)
 
 # 三、项目演示
 
