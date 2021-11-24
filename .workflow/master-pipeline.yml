@@ -7,7 +7,7 @@ triggers:
       prefix:
         - ''
 stages:
-  - name: stage-1aa4f604
+  - name: stage-e5ea441b
     displayName: 未命名
     strategy: naturally
     trigger: auto
